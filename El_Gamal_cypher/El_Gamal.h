@@ -13,15 +13,10 @@ private:
 	int secNum;
 	Message message;
 public:
-	/* El_Gamal(int random,int secret)
-	{
-	rndPubNum = random ;
-	secNum = secret;
-	}; */
 	unsigned int g,p;
 	unsigned int pubNum;
-	unsigned int gen_g(unsigned int g);
-	unsigned int gen_p(unsigned int p);
+	unsigned int gen_g(unsigned int p);
+	unsigned int gen_p();
 	unsigned int gen_random_number();
 	unsigned int gen_public_number(int secNum);
 	unsigned int gen_public_from_random(int rndPubNum);
